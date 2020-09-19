@@ -21,14 +21,15 @@ First, knowing that the run time needed to be measured to compare to the refacto
 Next, the ticker and output arrays/variables were initialized and the RowCount was defined to determine the last row number in the worksheet that contains data.  One difference in this section between the original code and the refactored code is that refactored code used arrays for the output values rather than single values.  To loop through the array values and access the correct index accross the different arrays, a tickerIndex was defined and initialized to zero as shown below.
 
 &emsp; &emsp; &emsp; &emsp; _***Original VBA Script***_ &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;***Refactored VBA Script***
-<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Initial%20Initializing%20Arrays.png" width=450>
-<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Initializing%20Arrays.png" width=450>
+<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Initial%20Initializing%20Arrays.png" width=525>
+<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Initializing%20Arrays.png" width=375>
 
 After the variables were initialized, loops were used to iterate through the data and perform the analysis.  In the original script, a For loop was used to iterate through each of the tickers.  A nested loop then went row by row through each line of data for each ticker.  If the ticker in the first column of the data matched the ticker culled out in the loop, calculations were performed to find the *Total Daily Volume* and *Return*.  In the refactored data, a For loop was used to interate through each tickerIndex.  However, instead of going through the entire set of data for each tickerIndex, the nested inner loop was set up to run the calculations for the specified ticker until that ticker no longer matched.  The ticker was then increased by one, moving the calculations to the next value in the array and the calculations wer repeated for that next ticker.  By using the array approach, the script only has to run through each data row one time, rather than 12 times as was required by the initial script.  The two scripts are shown below.
 
 ***Initial VBA Script***
 
 ![Initial Loop Analysis](https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Initial%20Loop%20Analysis.png)
+
 ***Refactored VBA Script***
 
 ![Loop Analysis](https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Loop%20Analysis.png)
@@ -48,6 +49,7 @@ The message box that is added at the end of the code tells the user how long it 
 <img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202017.png"><img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202018.png">
 
 ***Refactored VBA Script***
+
 <img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202017.png"><img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202018.png">
 
 ## Summary
