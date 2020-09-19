@@ -42,15 +42,15 @@ Finally, the last steps of the script involved formatting the output values to m
 
 ![Formatting Results](https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Formatting%20Results.png)
 
-The message box that is added at the end of the code tells the user how long it took to run the script.  We can see from the readouts that the initial script had run times of about 0.5 seconds while the refactored script had run times of about 0.1 seconds.
+The message box that is added at the end of the code tells the user how long it took to run the script.  We can see from the readouts that the initial script had run times of about 0.7 seconds while the refactored script had run times of about 0.1 seconds.  This shows that refactoring the data resulted in the script being able to run 7 times faster than the original. 
 
 ***Initial VBA Script***
 
-<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202017.png"><img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202018.png">
+<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202017.png"> &emsp; &emsp; &emsp; &emsp; <img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/Original%20VBA%20Code%202018.png">
 
 ***Refactored VBA Script***
 
-<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202017.png"><img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202018.png">
+<img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202017.png"> &emsp; &emsp; &emsp; &emsp; <img src="https://github.com/whitneylosinski/stock-analysis/blob/master/Resources/VBA%20Challenge%202018.png">
 
 ## Summary
 
